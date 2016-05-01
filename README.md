@@ -8,5 +8,5 @@
 > **点击login就可以进入后台页面**
 
 
-![bootstrap-velo](http://show.hivan.me/bootstrap/login)
+[bootstrap-velo](http://show.hivan.me/bootstrap/login)
 
