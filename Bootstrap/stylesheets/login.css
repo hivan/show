@@ -1,0 +1,22 @@
+html, body { width: 100%; height: 100%; }
+
+.right { float: right; }
+
+.login-container { background: #2bbfbd !important; height: 100%; width: 100%; }
+
+.login--box { height: 400px; position: absolute; top: 0; left: 0; right: 0; bottom: 0; margin: auto; background-color: #0b1217; border-radius: 10px; box-shadow: 2px 4px 4px 1px rgba(0, 0, 0, 0.3); }
+.login--box article.container { margin-top: 20px; }
+.login--box article.container .form-group { margin-top: 20px; }
+.login--box article.container input[type="username"], .login--box article.container input[type="password"] { background-color: #17191e; color: #979696; border: none; height: 36px; border-top: 1px solid #222; }
+.login--box footer { font-size: 12px; }
+.login--box footer span a { color: #979696; }
+.login--box footer span:last-child a { color: #d29d41; }
+
+.login--box--inner { color: #979696; }
+.login--box--inner header { margin-top: 40px; }
+.login--box--inner header h1 { float: left; font-weight: normal; }
+.login--box--inner header img { width: 70px; height: 70px; float: right; }
+.login--box--inner form .col-sm-12 { padding: 0; }
+
+.btn-sign { width: 100%; color: #6c411b; text-shadow: 0 -1px 1px rgba(255, 255, 255, 0.3); background-color: #d29d41; }
+.btn-sign:hover { color: #616060; }
