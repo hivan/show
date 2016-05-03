@@ -1,0 +1,41 @@
+#student {
+  width: 300px;
+  height: 140px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  color: #f9f9f9;
+  background-color: #333;
+  padding:20px;
+  border-radius: 10px;
+}
+
+#student input{
+    line-height: 32px;
+    border:none;
+    padding: 0;
+    font-size: 16px;
+}
+
+input#num{
+    padding-left: 15px;
+    width: 150px;
+}
+input#submit{
+    width:75px;
+    margin-left:20px;
+    background-color: orange;
+    color: #f9f9f9;
+}
+
+input#rank{
+    background-color: #666;
+    width: 32px;
+    margin:0 5px;
+    font-size: 16px;
+    color: #f9f9f9;
+    text-align:center;
+}
