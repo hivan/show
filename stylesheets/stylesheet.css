@@ -73,6 +73,10 @@
 .foto{
   box-sizing: border-box;
   border-top:3px solid #eee;
+  padding-bottom: 73%;
+  height: 0;
+  background-color: #fff;
+  overflow:hidden;
 }
 
 .foto img{
@@ -100,6 +104,15 @@
 .foto-info{
   font-size: 14px;
   color:#9e9e9e;
+  padding-bottom: 30%;
+  height: 0;
+  overflow:hidden;
+  text-overflow: ellipsis;
+
+  /*webkit的多行文字溢出"..."*/
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 
 .foto-header{
