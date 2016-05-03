@@ -2,7 +2,10 @@ function sum(){
   var x = document.getElementById('num').value;
   var y = document.getElementById('rank').value;
   console.log(x);
-  if (x == 100) {
+  if ( isNaN(x) || x == "" || x == NaN || x > 100){
+    alert('请输入有效的成绩');
+    return false;
+  }else if (x == 100) {
     x = x - 1;
   }
   var n = 10 - (Math.floor(x / 10));
