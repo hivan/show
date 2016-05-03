@@ -10,9 +10,9 @@
 <body>
   <div id="student">
     <p>请输入学生成绩:</p>
-    <form action="">
+    <form action="" onsubmit="return false">
       <input type="number" value="" placeholder="1~100的整数" id="num" max="100" min="0" autofocus>
-      <input type="submit" value="submit" id="submit" onclick="return sum()">
+      <input type="submit" value="submit" id="submit" onclick="sum()">
     </form>
     <br>
     <p><span id="name">您</span>的成绩为 <input type="text" value="" id="rank" readonly> 等</p>
