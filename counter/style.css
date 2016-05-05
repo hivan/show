@@ -46,6 +46,7 @@ th {
 
 th input{
   width: 100%;
+  padding: 0;
   font-size: 36px;
   color:#fff;
   background-color: #888;

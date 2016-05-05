@@ -1,6 +1,6 @@
 var result; // 输入的数值
 var operator; // 运算符
-var pressKey = false;  // 记录是否按下"="号;
+var pressKey = false; // 记录是否按下"="号;
 
 // 数字键事件
 function connectionDigital(control) {
@@ -14,13 +14,22 @@ function connectionDigital(control) {
   // 判断是否输入过小数点
   if (txt.value.indexOf('.') > -1 && control.value == '.') {
     return false;
+  }else if (txt.value == 0 && control.value == '.') {
+    txt.value = '0';
+    txt.value += control.value;
+    return false;
+  }
+
+  // 如果值为0，则不能在输入0
+  if (txt.value == '0' && control.value == '0' ) {
+    return false;
   }
 
   // 将数值赋值给数值输入框
-  if (txt.value == '0' || txt.value == '0.00') {
+  if (txt.value == '0') {
     txt.value = '';
     txt.value += control.value;
-  }else{
+  } else {
     txt.value += control.value;
   }
 }
@@ -52,20 +61,34 @@ function calculation(control) {
 
 //计算结果
 function getResult() {
-  var opValue;
+  var opValue = '';
 
   var sourseValue = parseFloat(result);
   var txt = document.getElementById('sum');
   if (operator == '×') {
     opValue = sourseValue * parseFloat(txt.value);
-  }else if (operator == '÷') {
-    opValue = sourseValue / parseFloat(txt.value);
-  }else if (operator == '+') {
+    opValue = parseFloat(opValue.toFixed(4));
+  } else if (operator == '÷') {
+    // 当除数为0的时候
+    if (txt.value == 0) {
+      opValue = '无法计算';
+    }else{
+      opValue = sourseValue / parseFloat(txt.value);
+      opValue = parseFloat(opValue.toFixed(4));
+    }
+  } else if (operator == '+') {
     opValue = sourseValue + parseFloat(txt.value);
-  }else if (operator == '-') {
+    opValue = parseFloat(opValue.toFixed(4));
+  } else if (operator == '-') {
     opValue = sourseValue - parseFloat(txt.value);
-  }else if(operator == '%'){
+    opValue = parseFloat(opValue.toFixed(4));
+  } else if (operator == '%') {
     opValue = sourseValue / 100;
+    opValue = parseFloat(opValue.toFixed(4));
+  } else if (operator != '+' && operator != '-' && operator != '÷' && operator != '×' && txt.value == '') {
+    opValue = "请输入数字";
+  } else{
+    opValue = txt.value;
   }
   txt.value = opValue;
   pressKey = true;
