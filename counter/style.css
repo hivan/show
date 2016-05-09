@@ -1,5 +1,5 @@
 .counter-wrap {
-  width: 300px;
+  width: 400px;
   height: 500px;
   position: absolute;
   top: 0;
@@ -57,7 +57,7 @@ th input{
 td {
   text-align: center;
   border: 1px solid #888;
-  width: 24%;
+  width: 19%;
 }
 
 td input {

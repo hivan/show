@@ -58,6 +58,36 @@ function calculation(control) {
   txt.value = '';
 }
 
+function math(control) {
+  var opValue = '';
+  var operator = control.value;
+  var txt = document.getElementById('sum');
+  opValue = txt.value;
+  if (operator == 'sin') {
+    opValue = Math.sin(opValue*Math.PI/180);
+    opValue = parseFloat(opValue.toFixed(8));
+  }else if (operator == 'cos') {
+    opValue = Math.cos(opValue*Math.PI/180);
+    opValue = parseFloat(opValue.toFixed(8));
+  } else if (operator == 'tan') {
+    opValue = Math.tan(opValue*Math.PI/180);
+    opValue = parseFloat(opValue.toFixed(8));
+  }else if(operator == '√'){
+    opValue = Math.sqrt(opValue);
+    opValue = parseFloat(opValue.toFixed(8));
+  }else if(operator == 'log'){
+    opValue = Math.log(opValue);
+    opValue = parseFloat(opValue.toFixed(8));
+  }else{
+    opValue = '无法计算';
+    return false;
+  }
+  txt.value = opValue;
+  pressKey = true;
+  result = '';
+  opValue = '';
+}
+
 
 //计算结果
 function getResult() {
@@ -67,24 +97,23 @@ function getResult() {
   var txt = document.getElementById('sum');
   if (operator == '×') {
     opValue = sourseValue * parseFloat(txt.value);
-    opValue = parseFloat(opValue.toFixed(4));
+    opValue = parseFloat(opValue.toFixed(8));
   } else if (operator == '÷') {
     // 当除数为0的时候
     if (txt.value == 0) {
-      opValue = '无法计算';
-    }else{
-      opValue = sourseValue / parseFloat(txt.value);
-      opValue = parseFloat(opValue.toFixed(4));
+      alert('除数不能为0');
     }
+    opValue = sourseValue / parseFloat(txt.value);
+    opValue = parseFloat(opValue.toFixed(8));
   } else if (operator == '+') {
     opValue = sourseValue + parseFloat(txt.value);
-    opValue = parseFloat(opValue.toFixed(4));
+    opValue = parseFloat(opValue.toFixed(8));
   } else if (operator == '-') {
     opValue = sourseValue - parseFloat(txt.value);
-    opValue = parseFloat(opValue.toFixed(4));
+    opValue = parseFloat(opValue.toFixed(8));
   } else if (operator == '%') {
     opValue = sourseValue / 100;
-    opValue = parseFloat(opValue.toFixed(4));
+    opValue = parseFloat(opValue.toFixed(8));
   } else if (operator != '+' && operator != '-' && operator != '÷' && operator != '×' && txt.value == '') {
     opValue = "请输入数字";
   } else{
