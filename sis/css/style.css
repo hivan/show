@@ -1,0 +1,325 @@
+/* line 1, ../../sass/_reset.scss */
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+/* line 6, ../../sass/_reset.scss */
+html {
+  height: 100%;
+  font-family: "microsoft yahei", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  background: #020b52;
+}
+
+/* line 11, ../../sass/_reset.scss */
+body {
+  height: 100%;
+  overflow: hidden;
+  margin: 0  auto;
+}
+
+/* line 16, ../../sass/_reset.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 19, ../../sass/_reset.scss */
+li {
+  list-style: none;
+}
+
+/* line 22, ../../sass/_reset.scss */
+p,
+a,
+button,
+span {
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 28, ../../sass/_reset.scss */
+input {
+  outline: none;
+}
+
+/* line 1, ../../sass/_layout.scss */
+#wrapper {
+  position: relative;
+  width: 375px;
+  height: 100%;
+  max-width: 562px;
+  max-height: 870px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* line 1, ../../sass/_mySwiper.scss */
+.swiper-slide {
+  height: 100%;
+}
+
+/* line 5, ../../sass/_mySwiper.scss */
+.swiper-container {
+  height: 100%;
+}
+
+/* line 9, ../../sass/_mySwiper.scss */
+.swiper-button-next.next-page {
+  top: 465px;
+  width: 36px;
+  height: 40px;
+  left: 50%;
+  margin-left: -18px;
+}
+/* line 15, ../../sass/_mySwiper.scss */
+.swiper-button-next.next-page img {
+  width: 36px;
+}
+
+/* line 20, ../../sass/_mySwiper.scss */
+.next-page {
+  animation: 1.4s next ease-in-out infinite;
+}
+
+@keyframes next {
+  0% {
+    opacity: 0;
+    top: 475px;
+  }
+  100% {
+    opacity: 1;
+    top: 455px;
+  }
+}
+@keyframes left {
+  0% {
+    opacity: 0;
+    top: 475px;
+  }
+  100% {
+    opacity: 1;
+    top: 455px;
+  }
+}
+/* line 1, ../../sass/_media.scss */
+.media-wrapper {
+  position: absolute;
+  top: 124px;
+  left: 0;
+  width: 375px;
+  height: 247px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 2;
+}
+
+/* line 12, ../../sass/_media.scss */
+.media-video {
+  bottom: 0;
+  top: 0;
+  right: 0;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  display: block;
+  border: none;
+}
+
+/* line 1, ../../sass/_scene.scss */
+.scene-wrapper {
+  overflow: hidden;
+}
+/* line 3, ../../sass/_scene.scss */
+.scene-wrapper header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 200;
+}
+
+/* line 12, ../../sass/_scene.scss */
+.blueSwiper {
+  background-color: #020b52;
+}
+
+/* line 16, ../../sass/_scene.scss */
+.greenSwiper {
+  background-color: #00211a;
+}
+
+/* line 20, ../../sass/_scene.scss */
+.redSwiper {
+  background-color: #3b0000;
+}
+
+/* line 24, ../../sass/_scene.scss */
+.scene-move {
+  overflow: hidden;
+  position: absolute;
+  top: 116px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  -webkit-transition: all 1.6s ease-out;
+  transition: all 1.6s ease-out;
+}
+
+/* line 36, ../../sass/_scene.scss */
+.scene-bg {
+  z-index: 1;
+}
+
+/* line 40, ../../sass/_scene.scss */
+.scene-gear {
+  width: 68px;
+  position: absolute;
+  z-index: 100;
+  -webkit-transition: -webkit-transform 1.6s linear;
+  transition: transform 1.6s linear;
+}
+
+/* line 48, ../../sass/_scene.scss */
+.gear-top {
+  top: -34px;
+}
+
+/* line 52, ../../sass/_scene.scss */
+.gear-left {
+  left: -34px;
+}
+
+/* line 56, ../../sass/_scene.scss */
+.gear-right {
+  right: -34px;
+}
+
+/* line 60, ../../sass/_scene.scss */
+.gear-bottom {
+  top: 340px;
+}
+
+/* line 64, ../../sass/_scene.scss */
+.scene-title {
+  position: absolute;
+  width: 375px;
+  z-index: 99;
+}
+
+/* line 70, ../../sass/_scene.scss */
+.gear-title {
+  width: 39px;
+  top: 76px;
+  left: 50%;
+  margin-left: -20px;
+}
+
+/* line 77, ../../sass/_scene.scss */
+.title-1 {
+  top: 135px;
+}
+
+/* line 81, ../../sass/_scene.scss */
+.title-2 {
+  top: 185px;
+}
+
+/* line 85, ../../sass/_scene.scss */
+.title-3 {
+  top: 35px;
+}
+
+/* line 89, ../../sass/_scene.scss */
+.scene-slide {
+  position: absolute;
+  width: 375px;
+}
+
+/* line 94, ../../sass/_scene.scss */
+.slide-bayonet {
+  top: 55px;
+}
+
+/* line 98, ../../sass/_scene.scss */
+.scene-line {
+  position: absolute;
+  top: 190px;
+  width: 70px;
+}
+
+/* line 104, ../../sass/_scene.scss */
+.line-left {
+  left: -20px;
+}
+
+/* line 108, ../../sass/_scene.scss */
+.line-right {
+  right: -20px;
+}
+
+/* line 1, ../../sass/_btn.scss */
+.btn-wrapper {
+  width: 100%;
+  position: absolute;
+  top: 300px;
+}
+/* line 5, ../../sass/_btn.scss */
+.btn-wrapper img {
+  position: absolute;
+}
+/* line 8, ../../sass/_btn.scss */
+.btn-wrapper .btn {
+  width: 80px;
+  left: 50%;
+  margin-left: -40px;
+}
+/* line 13, ../../sass/_btn.scss */
+.btn-wrapper .go {
+  width: 30px;
+}
+/* line 16, ../../sass/_btn.scss */
+.btn-wrapper .go-left {
+  top: 27px;
+  animation: left 1.2s ease-in-out infinite;
+}
+/* line 21, ../../sass/_btn.scss */
+.btn-wrapper .go-right {
+  top: 27px;
+  animation: right 1.2s ease-in-out infinite;
+}
+
+@keyframes next {
+  0% {
+    opacity: 0;
+    top: 475px;
+  }
+  100% {
+    opacity: 1;
+    top: 455px;
+  }
+}
+@keyframes left {
+  0% {
+    opacity: 0;
+    left: 85px;
+  }
+  100% {
+    opacity: 1;
+    left: 100px;
+  }
+}
+@keyframes right {
+  0% {
+    opacity: 0;
+    right: 85px;
+  }
+  100% {
+    opacity: 1;
+    right: 100px;
+  }
+}
+/* line 9, ../../sass/style.scss */
+.hide {
+  display: none;
+}
