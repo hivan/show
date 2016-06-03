@@ -23,7 +23,7 @@ define(function(require, exports, module) {
         $(t).parents('.scene-move').css({
           'top': 116
         })
-        $(t).parents('.scene-move').children('.scene-gear').css({
+        $(t).parents('.scene-move').find('.scene-gear').css({
           'transform': 'rotate(0deg)'
         });
         $(audio).trigger('play');
@@ -35,7 +35,7 @@ define(function(require, exports, module) {
         'top': (247 + 116)
       });
 
-      $(t).parents('.scene-move').children('.scene-gear').css({
+      $(t).parents('.scene-move').find('.scene-gear').css({
         'transform': 'rotate(270deg)'
       });
 

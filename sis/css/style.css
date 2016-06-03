@@ -201,59 +201,67 @@ input {
 }
 
 /* line 64, ../../sass/_scene.scss */
+.scene-title-wrapper {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+/* line 71, ../../sass/_scene.scss */
 .scene-title {
   position: absolute;
   width: 375px;
-  z-index: 99;
 }
 
-/* line 70, ../../sass/_scene.scss */
+/* line 76, ../../sass/_scene.scss */
 .gear-title {
+  position: absolute;
   width: 39px;
   top: 76px;
   left: 50%;
   margin-left: -20px;
 }
 
-/* line 77, ../../sass/_scene.scss */
+/* line 84, ../../sass/_scene.scss */
 .title-1 {
   top: 135px;
 }
 
-/* line 81, ../../sass/_scene.scss */
+/* line 88, ../../sass/_scene.scss */
 .title-2 {
   top: 185px;
 }
 
-/* line 85, ../../sass/_scene.scss */
+/* line 92, ../../sass/_scene.scss */
 .title-3 {
   top: 35px;
 }
 
-/* line 89, ../../sass/_scene.scss */
+/* line 96, ../../sass/_scene.scss */
 .scene-slide {
   position: absolute;
   width: 375px;
 }
 
-/* line 94, ../../sass/_scene.scss */
+/* line 101, ../../sass/_scene.scss */
 .slide-bayonet {
   top: 55px;
 }
 
-/* line 98, ../../sass/_scene.scss */
+/* line 105, ../../sass/_scene.scss */
 .scene-line {
   position: absolute;
   top: 190px;
   width: 70px;
 }
 
-/* line 104, ../../sass/_scene.scss */
+/* line 111, ../../sass/_scene.scss */
 .line-left {
   left: -20px;
 }
 
-/* line 108, ../../sass/_scene.scss */
+/* line 115, ../../sass/_scene.scss */
 .line-right {
   right: -20px;
 }
